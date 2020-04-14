@@ -5,7 +5,7 @@
     "main":"index.js",
     "scripts":{
         "test":"hello",
-        "start":"node index.js"
+        "replace":"node index.js"
     },
     "author":"Red Hat",
     "license":"ISC",

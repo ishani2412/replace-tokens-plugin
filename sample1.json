@@ -1,1 +1,5 @@
-{"abc":" {{script}} "}
+{
+	"text1":"i love {{fortnite}}",
+	"text2":"good{{hello}}",
+	"text3":"opensource is {{github}}"
+}

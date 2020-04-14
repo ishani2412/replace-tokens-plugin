@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //dependency for file handling
 var fs = require('fs');
 

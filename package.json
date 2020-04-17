@@ -1,17 +1,19 @@
 {
-    "name":"replace-tokens",
-    "version":"1.0.0",
-    "description":"Tekton Plugin to replace tokens in a file",
-    "main":"index.js",
-    "scripts":{
-        "test":"hello",
-        "replace":"node index.js"
+    "name": "replace-tokens",
+    "version": "1.0.0",
+    "description": "Tekton Plugin to replace tokens in a file",
+    "main": "index.js",
+    "scripts": {
+        "test": "hello",
+        "replace": "node index.js"
     },
-    "author":"Red Hat",
-    "license":"ISC",
-    "dependencies":{
-        "fs":"0.0.1-security",
-        "json-token-replace":"^1.1.0",
-        "yargs":"^15.3.1"
+    "author": "Red Hat",
+    "license": "ISC",
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "js-yaml": "^3.13.1",
+        "json-token-replace": "^1.1.0",
+        "path": "^0.12.7",
+        "yargs": "^15.3.1"
     }
 }

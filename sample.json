@@ -1,0 +1,23 @@
+{
+    "id": "0001",
+    "type": "__type__",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters": {
+      "batter": [
+        { "id": "1001", "type": "__type__" },
+        { "id": "1002", "type": "Chocolate" },
+        { "id": "1003", "type": "__name__" },
+        { "id": "1004", "type": "Devil's Food" }
+      ]
+    },
+    "topping": [
+      { "id": "__id__", "type": "vinamra" },
+      { "id": "5002", "type": "Glazed" },
+      { "id": "5005", "type": "Sugar" },
+      { "id": "microsoft", "type": "Powdered Sugar" },
+      { "id": "5006", "type": "Chocolate with Sprinkles" },
+      { "id": "5003", "type": "Chocolate" },
+      { "id": "5004", "type": "Maple" }
+    ]
+  }

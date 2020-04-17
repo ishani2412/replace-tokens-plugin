@@ -1,6 +1,4 @@
 node_modules/
 .dockerignore
-Dockerfile
 package-lock.json
-plunder.js
 .gitignore

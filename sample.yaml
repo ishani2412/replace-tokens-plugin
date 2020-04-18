@@ -15,7 +15,7 @@ spec:
       type: ubuntu
   steps:
     - name: build-sources
-      image: (image)
+      image: $(image)
       command: 
       - /bin/bash
       args: 

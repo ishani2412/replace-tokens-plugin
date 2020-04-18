@@ -59,12 +59,12 @@ if (tokensExtension === ".yaml") {
 }
 
 let output = jtr.replace(tokens, fileContents, "$(", ")");
-console.log(output);
 
 if (fileExtension === ".yaml") {
   output = yaml.safeDump(output);
 } else {
   output = JSON.stringify(output);
 }
+console.log(output);
 
 fs.writeFileSync(filePath, output, "utf-8");

@@ -1,18 +1,18 @@
 {
     "id": "0001",
-    "type": "__type__",
+    "type": "$(type)",
     "name": "Cake",
     "ppu": 0.55,
     "batters": {
       "batter": [
-        { "id": "1001", "type": "__type__" },
+        { "id": "1001", "type": "$(type)" },
         { "id": "1002", "type": "Chocolate" },
-        { "id": "1003", "type": "__name__" },
+        { "id": "1003", "type": "$(name)" },
         { "id": "1004", "type": "Devil's Food" }
       ]
     },
     "topping": [
-      { "id": "__id__", "type": "vinamra" },
+      { "id": "$(id)", "type": "vinamra" },
       { "id": "5002", "type": "Glazed" },
       { "id": "5005", "type": "Sugar" },
       { "id": "microsoft", "type": "Powdered Sugar" },

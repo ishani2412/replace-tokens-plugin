@@ -21,6 +21,10 @@ if (args.inputfile !== undefined) {
   var filePath = args.inputfile;
   var fileContents = fs.readFileSync(filePath, "utf-8");
   var fileExtension = path.extname(filePath);
+  if (fileExtension !== ".yaml" && fileExtension !== ".json") {
+    console.error("Please provide a valid json or yaml file");
+    return;
+  }
 } else {
   console.error("Please provide a valid file path");
   return;
@@ -31,6 +35,10 @@ if (args.tokensfile !== undefined) {
   var tokensPath = args.tokensfile;
   var tokens = fs.readFileSync(tokensPath, "utf-8");
   var tokensExtension = path.extname(tokensPath);
+  if (tokensExtension !== ".yaml" && tokensExtension !== ".json") {
+    console.error("Please provide a valid json or yaml file");
+    return;
+  }
 } else {
   console.error("Please provide a valid file containing token values");
   return;
@@ -39,12 +47,8 @@ if (args.tokensfile !== undefined) {
 //if yaml file then convert to json
 if (fileExtension === ".yaml") {
   fileContents = yaml.load(fileContents);
-  var startDelimeter = "__";
-  var endDelimeter = "__";
 } else {
   fileContents = JSON.parse(fileContents);
-  var startDelimeter = "__";
-  var endDelimeter = "__";
 }
 
 //if tokens file is a yaml file then convert to json
@@ -54,7 +58,7 @@ if (tokensExtension === ".yaml") {
   tokens = JSON.parse(tokens);
 }
 
-let output = jtr.replace(tokens, fileContents, startDelimeter, endDelimeter);
+let output = jtr.replace(tokens, fileContents, "$(", ")");
 console.log(output);
 
 if (fileExtension === ".yaml") {
